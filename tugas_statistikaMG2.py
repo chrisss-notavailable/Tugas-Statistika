@@ -137,10 +137,10 @@ TIPE DATA :
 SKALA PENGUKURAN:
 
         1.Nominal : Hanya menggambarkan karakteristik tanpa ada urutan khusus
-        Contoh dalam tabel : Nama Hero
+        Contoh dalam tabel : Role hero
 
         2.Ordinal : Data dengan urutan yang jelas namum perbedaannya tidak dapat diukur dengan pasti
-        Contoh dalam tabel : Role Hero
+        Contoh dalam tabel : Tier Skin
 
         3.Interval, Data dengan interval seragam memungkinkan perbandingan matematis
         Contoh dalam tabel : Tahun Koleksi
