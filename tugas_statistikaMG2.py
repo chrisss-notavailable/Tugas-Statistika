@@ -12,66 +12,57 @@ x = {
 }
 
 y = {
-    "No": [1,2,3,4,5,6,7,8,9,10],
-    "Nama Logam": [
-        "Besi",
-        "Emas",
-        "Perak",
-        "Tembaga",
-        "Platina",
-        "Aluminium",
-        "Timah",
-        "Nikel",
-        "Titanium",
-        "Paladium"
+    "No": [1,2,3,4,5,6,7,8],
+    "Nama Hero": [
+        "Gusion",
+        "Lesley",
+        "Ruby",
+        "Ling",
+        "Aurora",
+        "Granger",
+        "Chou",
+        "Pharsa",
+        
     ],
-    "Status Kelangkaan": [
-        "Tidak Langka",
-        "Langka",
-        "Tidak Langka",
-        "Tidak Langka",
-        "Langka",
-        "Tidak Langka",
-        "Tidak Langka",
-        "Tidak Langka",
-        "Langka",
-        "Langka"
+    "Role Hero": [
+        "Ass/mage",
+        "MM/Ass",
+        "Fighter",
+        "Ass",
+        "Mage",
+        "MM",
+        "Fighter",
+        "Mage",
     ],
-    "Ketahanan Korosi": [
-        "Rendah",
-        "Tinggi",
-        "Sedang",
-        "Sedang",
-        "Tinggi",
-        "Sedang",
-        "Rendah",
-        "Tinggi",
-        "Tinggi",
-        "Tinggi"
+    "Tier Skin": [
+        "Legend",
+        "Aspirant",
+        "Aspirant",
+        "Collab",
+        "Collab",
+        "Collektor",
+        "Collab",
+        "Collektor",
+        ],
+    "Tahun koleksi": [
+        2020,
+        2025,
+        2025,
+        2022,
+        2019,
+        2024,
+        2022,
+        2025,
     ],
-    "Titik Lebur(C)": [
-        1538,
-        1064,
-        962,
-        1085,
-        1768,
-        660,
-        232,
-        1455,
-        1668,
-        1555
-    ],
-    "Harga per Gram": [
-        60,
-        2938000,
-        48000,
-        6000,
-        1200000,
-        25,
-        50,
-        10000,
-        45000,
-        500000
+    "kisaran harga": [
+        800000,
+        500000,
+        600000,
+        600000,
+        200000,
+        400000,
+        500000,
+        50000,
     ]
 }
 
@@ -80,7 +71,7 @@ tugas = pd.DataFrame(y)
 print("\nTUGAS STATISTIKA ANALISIS DATA\n")
 print(f"Nama    : {x['nama']}\nkelas  : {x['kelas']}\nNim   : {x['Nim']}\n")
 
-print("---------- DATA BATUAN LOGAM ----------\n")
+print("---------- DATA PENGELUARAN ML GWEH ----------\n")
 print(tugas.to_string(index=False, justify="center"))
 
 folder_script = os.path.dirname(os.path.abspath(__file__))
@@ -138,24 +129,24 @@ ANALISI DATA
 TIPE DATA :
 
         1.Kuantitatif, data numerik yang dapat dihitung dan diukur 
-        Contoh dalam tabel : Titik lebur & Harga per Gram
+        Contoh dalam tabel : Tahun koleksi, Kiasaran Harga
 
         2:Kualitatif,data yang menggmbarkan karakteristik yang tidak dapat diukur dengan angka
-        Contoh dalam tabel : Nama logam, Status Kelangkaan, Ketahanan Korosi
+        Contoh dalam tabel : Nama hero, Tier Skin, Role Hero
 
 SKALA PENGUKURAN:
 
         1.Nominal : Hanya menggambarkan karakteristik tanpa ada urutan khusus
-        Contoh dalam tabel : Nama Logam
+        Contoh dalam tabel : Nama Hero
 
         2.Ordinal : Data dengan urutan yang jelas namum perbedaannya tidak dapat diukur dengan pasti
-        Contoh dalam tabel : Tingkat korosi
+        Contoh dalam tabel : Role Hero
 
         3.Interval, Data dengan interval seragam memungkinkan perbandingan matematis
-        Contoh dalam tabel : Titik Lebur
+        Contoh dalam tabel : Tahun Koleksi
 
         4.Rasio : Memiliki Interval yang seragam dan memiliki titik 0 absolut
-        Contoh dalam tabel : Harga per Gram"""
+        Contoh dalam tabel : Kisaran Harga"""
 
 print(penjelasan)
 os.startfile(tugas2)
